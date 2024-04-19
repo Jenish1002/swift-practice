@@ -263,5 +263,3 @@ struct login_Previews: PreviewProvider {
 }
 
 ```
-
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-19 at 15 39 37](https://github.com/drodify-jenish/swift-practice/assets/164024132/7f5125a4-ed97-4cd2-93a5-682e796f2e1c)
