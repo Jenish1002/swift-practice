@@ -28,7 +28,7 @@ struct Login1: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 250, height: 250)
 
-                    Text("Login")
+                    Text("Login UI")
                         .bold()
                         .font(.title)
 
