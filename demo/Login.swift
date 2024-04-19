@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Login1: View {
+struct Login: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var username: String = ""
     @State private var password: String = ""
@@ -93,6 +93,6 @@ struct Login1: View {
 
 struct Login1_Previews: PreviewProvider {
     static var previews: some View {
-        Login1()
+        Login()
     }
 }
