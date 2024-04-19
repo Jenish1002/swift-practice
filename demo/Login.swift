@@ -91,7 +91,7 @@ struct Login: View {
     }
 }
 
-struct Login1_Previews: PreviewProvider {
+struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login()
     }
