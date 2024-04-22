@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AE1F80A92BCFFC4A003589FA /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F80A82BCFFC4A003589FA /* ScrollView.swift */; };
+		AE342FAA2BD629BE00D9DB7F /* gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE342FA92BD629BE00D9DB7F /* gallery.swift */; };
+		AE342FAC2BD62ECF00D9DB7F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE342FAB2BD62ECF00D9DB7F /* Product.swift */; };
+		AE342FAE2BD62EE800D9DB7F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE342FAD2BD62EE800D9DB7F /* APIManager.swift */; };
+		AE342FB02BD62FC100D9DB7F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE342FAF2BD62FC100D9DB7F /* ProductDetailView.swift */; };
+		AE342FB22BD6390200D9DB7F /* FadeInImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE342FB12BD6390200D9DB7F /* FadeInImageView.swift */; };
 		AE4E58BA2BD0DF3A00CBB125 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E58B92BD0DF3A00CBB125 /* Landmark.swift */; };
 		AE6E29662BD242580053E90B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6E29652BD242580053E90B /* Login.swift */; };
 		AEA092B62BCFA3C4002BE1D1 /* demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA092B52BCFA3C4002BE1D1 /* demoApp.swift */; };
@@ -22,6 +27,7 @@
 		AEA092EA2BCFCBBF002BE1D1 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA092E92BCFCBBF002BE1D1 /* LoginForm.swift */; };
 		AEA092EE2BCFD3BB002BE1D1 /* ZipCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA092ED2BCFD3BB002BE1D1 /* ZipCodeEntryView.swift */; };
 		AEA092F02BCFDC34002BE1D1 /* RemoteImageViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA092EF2BCFDC34002BE1D1 /* RemoteImageViewExample.swift */; };
+		AED79ED72BD289E90053D55E /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED79ED62BD289E90053D55E /* Dashboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		AE1F80A82BCFFC4A003589FA /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		AE342FA92BD629BE00D9DB7F /* gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery.swift; sourceTree = "<group>"; };
+		AE342FAB2BD62ECF00D9DB7F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AE342FAD2BD62EE800D9DB7F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AE342FAF2BD62FC100D9DB7F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		AE342FB12BD6390200D9DB7F /* FadeInImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInImageView.swift; sourceTree = "<group>"; };
 		AE4E58B92BD0DF3A00CBB125 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		AE6E29652BD242580053E90B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		AEA092B22BCFA3C4002BE1D1 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +71,7 @@
 		AEA092E92BCFCBBF002BE1D1 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		AEA092ED2BCFD3BB002BE1D1 /* ZipCodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeEntryView.swift; sourceTree = "<group>"; };
 		AEA092EF2BCFDC34002BE1D1 /* RemoteImageViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewExample.swift; sourceTree = "<group>"; };
+		AED79ED62BD289E90053D55E /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,12 @@
 				AEA092ED2BCFD3BB002BE1D1 /* ZipCodeEntryView.swift */,
 				AE1F80A82BCFFC4A003589FA /* ScrollView.swift */,
 				AE4E58B92BD0DF3A00CBB125 /* Landmark.swift */,
+				AED79ED62BD289E90053D55E /* Dashboard.swift */,
+				AE342FA92BD629BE00D9DB7F /* gallery.swift */,
+				AE342FAB2BD62ECF00D9DB7F /* Product.swift */,
+				AE342FAD2BD62EE800D9DB7F /* APIManager.swift */,
+				AE342FAF2BD62FC100D9DB7F /* ProductDetailView.swift */,
+				AE342FB12BD6390200D9DB7F /* FadeInImageView.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -283,14 +301,20 @@
 			files = (
 				AEA092B82BCFA3C4002BE1D1 /* ContentView.swift in Sources */,
 				AE6E29662BD242580053E90B /* Login.swift in Sources */,
+				AED79ED72BD289E90053D55E /* Dashboard.swift in Sources */,
 				AEA092EA2BCFCBBF002BE1D1 /* LoginForm.swift in Sources */,
 				AEA092E22BCFC3BC002BE1D1 /* Maps.swift in Sources */,
+				AE342FB22BD6390200D9DB7F /* FadeInImageView.swift in Sources */,
 				AEA092EE2BCFD3BB002BE1D1 /* ZipCodeEntryView.swift in Sources */,
+				AE342FAE2BD62EE800D9DB7F /* APIManager.swift in Sources */,
 				AEA092F02BCFDC34002BE1D1 /* RemoteImageViewExample.swift in Sources */,
 				AE1F80A92BCFFC4A003589FA /* ScrollView.swift in Sources */,
+				AE342FAA2BD629BE00D9DB7F /* gallery.swift in Sources */,
 				AEA092E02BCFBE14002BE1D1 /* stacks.swift in Sources */,
+				AE342FB02BD62FC100D9DB7F /* ProductDetailView.swift in Sources */,
 				AEA092B62BCFA3C4002BE1D1 /* demoApp.swift in Sources */,
 				AE4E58BA2BD0DF3A00CBB125 /* Landmark.swift in Sources */,
+				AE342FAC2BD62ECF00D9DB7F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

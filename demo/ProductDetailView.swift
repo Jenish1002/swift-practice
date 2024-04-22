@@ -1,18 +1,45 @@
-//
-//  ProductDetailView.swift
-//  demo
-//
-//  Created by Jenish Savaliya on 22/04/24.
-//
-
 import SwiftUI
 
 struct ProductDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let product: Product
 
-#Preview {
-    ProductDetailView()
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(product.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Text("Price: $\(product.price)")
+                    .font(.subheadline)
+                
+                Text("Rating: \(product.rating) (\(product.stock) in stock)")
+                    .font(.subheadline)
+                
+                Text(product.description)
+                    .font(.body)
+                    .padding(.top)
+
+                Text("Images")
+                    .font(.headline)
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(product.images, id: \.self) { imageUrl in
+                            AsyncImage(url: URL(string: imageUrl)) { image in
+                                image.resizable()
+                            } placeholder: {
+                                Color.gray
+                            }
+                            .frame(width: 200, height: 200)
+                            .cornerRadius(8)
+                            .padding(.vertical)
+                        }
+                    }
+                }
+            }
+            .padding()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+    }
 }

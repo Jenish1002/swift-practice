@@ -1,18 +1,18 @@
-//
-//  Product.swift
-//  demo
-//
-//  Created by Jenish Savaliya on 22/04/24.
-//
+import Foundation
 
-import SwiftUI
-
-struct Product: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Product: Codable, Identifiable {
+    let id: Int
+    let title: String
+    let description: String
+    let price: Int
+    let discountPercentage: Double
+    let rating: Double
+    let stock: Int
+    let brand: String
+    let category: String
+    let thumbnail: String
+    let images: [String]
 }
-
-#Preview {
-    Product()
+struct ProductsResponse: Codable {
+    let products: [Product]
 }

@@ -6,6 +6,7 @@ struct Login: View {
     @State private var password: String = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
+    @State private var isAuthenticated = false  // This will control the navigation to Dashboard
 
     var body: some View {
         NavigationView {
@@ -56,13 +57,16 @@ struct Login: View {
                     .cornerRadius(7.0)
                     .buttonStyle(PlainButtonStyle())
                     .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("Login Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                        Alert(title: Text(alertMessage), dismissButton: .default(Text("OK")))
                     }
                 }
                 .padding(20)
             }
             .navigationBarTitle("Login", displayMode: .inline)
             .navigationBarHidden(true)
+        }
+        .fullScreenCover(isPresented: $isAuthenticated) {
+            Dashboard()
         }
     }
 
@@ -74,15 +78,14 @@ struct Login: View {
             alertMessage = "Password must be at least 8 characters long."
             showingAlert = true
         } else {
-            // Proceed with login process if both validations pass
-            alertMessage = "Login successful!"
-            showingAlert = true
+            // Assuming validation passes, navigate to the Dashboard
+            isAuthenticated = true
         }
     }
 
     private func isEmailValid(_ email: String) -> Bool {
         let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailPattern)
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailPattern)
         return emailPredicate.evaluate(with: email)
     }
 
